@@ -1,0 +1,220 @@
+/* *{
+max-width:0px ;
+padding: 0px;
+box-sizing:border-box;
+}   */
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.main-container{
+border: 1px solid black;
+display: flex;
+/* height: 100vh;
+/* width: 100vw;  */
+}
+.nav-bar{
+    border:1px solid red;
+    width: 20%;
+    background-color:  rgba(105, 26, 26, 0.7);
+    position:fixed;
+    height: 100%;
+}
+.section-container{
+    border: 1px solid red;
+    width: 80%;
+    overflow: auto;
+    height: 300vh;
+    margin-left: 20%;
+
+}
+.image{
+    box-sizing: border-box;
+    border: 1px solid red;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin: 70px;
+}
+.name{
+    box-sizing: border-box;
+    border: 1px solid black;
+     height:100px;
+     width: 100%;
+     padding: 30px 50px;
+}
+.content{
+   border: 1px solid black;
+   /* height: 100%;
+   display: block; */
+}
+ul{
+    list-style-type:none ;
+     padding-top: 20px;
+    
+}
+ul li a{
+    text-decoration: none;
+    padding-top:10px ;
+
+}
+/* .section-container{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+.about-me-grid{
+    height: 33.3%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:'heading heading'
+            ' description video';
+    
+}
+.heading{
+    /* width: 200%; */
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    font-size: larger;
+    grid-area:heading ;
+}
+
+.description{
+    height: 100%;
+    width: 100%;
+    grid-area: description;
+
+}
+.story1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: aquamarine;
+    width: 90%;
+    height: 45%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.story2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: aquamarine;
+    width: 90%;
+    height: 30%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.written{
+    font-family: sans-serif;
+    margin: 5%;
+}
+.video{
+    grid-area: video;
+    background-color: aquamarine;
+    width: 95%;
+    height: 85%;
+    margin: 8%;
+
+} 
+.education-grid{
+    width: 100%;
+    height:  33.3%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 12% 22% 22% 22% 22% ;
+    grid-template-areas: 'edu-heading edu-heading'
+    'PRESENT info-1' 
+    'year-2019 info-2' 
+    'year-2015 info-3'  
+    'year-2013 info-4';    
+}
+.edu-heading{
+ display: flex;
+grid-area: edu-heading;
+ background-color: aqua;
+ justify-content: center;
+ align-items: center; 
+ font-size: large   ;  
+}
+.PRESENT{
+    grid-area: PRESENT;
+    border-right: 1px solid rgb(105, 103, 103);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; 
+    margin-top: 20px;
+    /* padding: 10px; */
+}
+.info-1{
+    display: flex;
+    grid-area: info-1;
+    padding-bottom: 20px;
+    margin-left: 3%;
+    margin-top: 20px;
+   
+}
+.year-2019{
+    display: flex;
+    border-right:  1px solid rgb(105, 103, 103);
+    justify-content: flex-end;
+    align-items: flex-start;
+    grid-area:year-2019 ;
+    /* margin-top: 20px; */
+}
+.info-2{
+    display: flex;
+    grid-area: info-2;
+    margin-left: 3%;
+}
+.year-2015{
+    display: flex;
+    border-right:  1px solid rgb(105, 103, 103);
+    justify-content: flex-end;
+    align-items: flex-start;
+    grid-area:year-2015 ;
+}
+.info-3{
+    display: flex;
+    grid-area: info-3;
+    margin-bottom: 10px;
+    margin-left: 3%;
+}
+.year-2013{
+    display: flex;
+    border-right:  1px solid rgb(105, 103, 103);
+    justify-content: flex-end;
+    align-items: flex-start;
+    grid-area:year-2013;
+    /* margin-top: 20px; */
+} 
+.info-4{
+    display: flex;
+    grid-area: info-4;
+    /* margin-top: 30px; */
+    margin-left: 3%;
+}                 
+ .Skills-heading{
+    display: flex;
+grid-area: Skills-heading;
+ background-color: aqua;
+ justify-content: center;
+ align-items: center; 
+ font-size: large ;
+ }
+
+.edu-details{
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 250px;
+}
+
+h3{
+    margin: 0;
+}
