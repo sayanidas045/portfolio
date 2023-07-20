@@ -218,3 +218,7 @@ grid-area: Skills-heading;
 h3{
     margin: 0;
 }
+img{
+    height: 100px;
+    width: 50px;
+}
