@@ -1,8 +1,8 @@
-/* *{
+ /* *{
 max-width:0px ;
 padding: 0px;
 box-sizing:border-box;
-}   */
+}    */
 body{
     height: 100vh;
     width: 100vw;
@@ -19,6 +19,7 @@ display: flex;
     background-color:  rgba(105, 26, 26, 0.7);
     position:fixed;
     height: 100%;
+   
 }
 .section-container{
     border: 1px solid red;
@@ -49,13 +50,20 @@ display: flex;
    display: block; */
 }
 ul{
-    list-style-type:none ;
-     padding-top: 20px;
+    display: flex;
+    list-style-type: none;
+    padding-top: 20px;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+    font-size: 20px;
+     
     
 }
 ul li a{
     text-decoration: none;
     padding-top:10px ;
+    color: black    ;
 
 }
 /* .section-container{
@@ -221,4 +229,21 @@ h3{
 img{
     height: 100px;
     width: 50px;
+}
+
+.edu-logo{
+    height: 250px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+
+}
+.nav-bar .image{
+    background-image: url(./images/img-mee.jpg);
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+}
+.list{
+    padding: 30px;
 }
